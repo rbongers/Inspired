@@ -18,12 +18,14 @@ class SiteDetailViewController: UIViewController, UITabBarDelegate {
     
     override func viewDidLoad() {
         var navigationBarAppearace = UINavigationBar.appearance()
-        
         navigationBarAppearace.tintColor = UIColor(rgba: "#ffffff")
         navigationBarAppearace.barTintColor = UIColor(rgba: "#000000")
         
-        var statusView: SiteStatusViewController = storyboard?.instantiateViewControllerWithIdentifier("siteStatus") as SiteStatusViewController;
-        statusView.removeFromParentViewController();
+        self.tabBarController?.selectedIndex = 0;
+        
+        
+//        var statusView: SiteStatusViewController = storyboard?.instantiateViewControllerWithIdentifier("siteStatus") as SiteStatusViewController;
+//        statusView.removeFromParentViewController();
         
 //        var statusView = storyboard?.instantiateViewControllerWithIdentifier("statusViewController");
 //        instantiateViewControllerWithIdentifier(viewControllerIdentifiers[sender.selectedSegmentIndex]) as UIViewController
