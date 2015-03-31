@@ -9,33 +9,74 @@
 import UIKit
 import Parse
 
-
 class SiteDetailViewController: UIViewController, UITabBarDelegate {
 
-    @IBOutlet var container: UIView!
-    
+    @IBOutlet var heartBeat: SpringLabel!
+    @IBOutlet var serviceSwitch: UISwitch!
+    @IBOutlet var serverStatus: UILabel!
+    @IBOutlet var serviceStatus: UILabel!
+    @IBOutlet var serverStatusO: UILabel!
+    @IBOutlet var serviceStatusO: UILabel!
+//    var data: PFObject!;
+    var data: PFObject!
+
 
     
     override func viewDidLoad() {
+        NSLog("data: \(data)");
         var navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.tintColor = UIColor(rgba: "#ffffff")
         navigationBarAppearace.barTintColor = UIColor(rgba: "#000000")
         
         self.tabBarController?.selectedIndex = 0;
+//        self.tabBarController.
         
+//        [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
         
-//        var statusView: SiteStatusViewController = storyboard?.instantiateViewControllerWithIdentifier("siteStatus") as SiteStatusViewController;
-//        statusView.removeFromParentViewController();
-        
-//        var statusView = storyboard?.instantiateViewControllerWithIdentifier("statusViewController");
-//        instantiateViewControllerWithIdentifier(viewControllerIdentifiers[sender.selectedSegmentIndex]) as UIViewController
-//        self.container.
-        
+//        data["active"] = Bool(data["active"]);
+        if let active = data["active"] as? Bool{
+            if(active){
+                setServiceOn(true);
+            }else{
+                setServiceOn(false);            }
+        }
+        else{
+            NSLog("active");
+            
+        }
     }
     
-    func setStatisticsView(){
-        
+    @IBAction func didChangeServiceStatus(sender: UISwitch) {
+        if(sender.on){
+            setServiceOn(true);
+        }else{
+            setServiceOn(false);
+        }
     }
+    override func viewDidAppear(animated: Bool) {
+        heartBeat.animation = "pop"
+        heartBeat.curve = "spring"
+        heartBeat.duration = 2.2
+        heartBeat.repeatCount = 999999;
+        heartBeat.animate();
+    }
+    
+    func setServiceOn(active:Bool){
+        if(active){
+            serviceSwitch.setOn(true, animated: true);
+            serviceStatusO.textColor = UIColor(rgba: "#3ad36b");
+            serviceStatus.text = "Service is on";
+            heartBeat.repeatCount = 1;
+
+        }else{
+            serviceSwitch.setOn(false, animated: false);
+            serviceStatusO.textColor = UIColor(rgba: "#C32652");
+            serviceStatus.text = "Service is off";
+        }
+    }
+    
+    
+    
     
     func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
         if(item.tag == 2){

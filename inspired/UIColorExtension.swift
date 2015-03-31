@@ -51,4 +51,16 @@ extension UIColor {
         }
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
+    
+    func IgreenColor() -> UIColor {
+        return UIColor(rgba: "#3ad36b");
+    }
+    
+    func IredColor() -> UIColor {
+        return UIColor(rgba: "#C32652");
+    }
+    
+    func IdarkColor() -> UIColor {
+        return UIColor(rgba: "#222222");
+    }
 }

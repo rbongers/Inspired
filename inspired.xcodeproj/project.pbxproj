@@ -14,6 +14,8 @@
 		C83A12291ABC5BFA006F2A52 /* AddSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A12281ABC5BFA006F2A52 /* AddSiteViewController.swift */; };
 		C83B8BEF1AB9AE66004AA1BA /* SiteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B8BEE1AB9AE66004AA1BA /* SiteCollectionViewCell.swift */; };
 		C83B8BF11AB9B3AF004AA1BA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B8BF01AB9B3AF004AA1BA /* UIColorExtension.swift */; };
+		C856D4DA1AC98E94006FC9FB /* SiteStatisticsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856D4D91AC98E94006FC9FB /* SiteStatisticsPageViewController.swift */; };
+		C856D4DC1AC99223006FC9FB /* SiteDetailSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856D4DB1AC99223006FC9FB /* SiteDetailSettingsViewController.swift */; };
 		C86AA15C1AB6C91100486F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AA15B1AB6C91100486F14 /* AppDelegate.swift */; };
 		C86AA15E1AB6C91100486F14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AA15D1AB6C91100486F14 /* ViewController.swift */; };
 		C86AA1611AB6C91100486F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86AA15F1AB6C91100486F14 /* Main.storyboard */; };
@@ -36,6 +38,21 @@
 		C86AA1961AB6C9AB00486F14 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA1951AB6C9AB00486F14 /* Social.framework */; };
 		C86AA1981AB6C9B000486F14 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA1971AB6C9B000486F14 /* Accounts.framework */; };
 		C86AA19A1AB6D62500486F14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AA1991AB6D62500486F14 /* LoginViewController.swift */; };
+		C86C839C1AC94A51005FC021 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = C86C839B1AC94A51005FC021 /* FontAwesome.otf */; };
+		C86C839F1AC952B9005FC021 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C839E1AC952B9005FC021 /* Spring.swift */; };
+		C86C83A71AC953AF005FC021 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A01AC953AF005FC021 /* SpringAnimation.swift */; };
+		C86C83A81AC953AF005FC021 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A11AC953AF005FC021 /* SpringButton.swift */; };
+		C86C83A91AC953AF005FC021 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A21AC953AF005FC021 /* SpringImageView.swift */; };
+		C86C83AA1AC953AF005FC021 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A31AC953AF005FC021 /* SpringLabel.swift */; };
+		C86C83AB1AC953AF005FC021 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A41AC953AF005FC021 /* SpringTextField.swift */; };
+		C86C83AC1AC953AF005FC021 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A51AC953AF005FC021 /* SpringTextView.swift */; };
+		C86C83AD1AC953AF005FC021 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83A61AC953AF005FC021 /* SpringView.swift */; };
+		C86C83B31AC982F5005FC021 /* SiteStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B21AC982F5005FC021 /* SiteStatisticsViewController.swift */; };
+		C86C83B81AC983BE005FC021 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B51AC983BE005FC021 /* Chart.swift */; };
+		C86C83B91AC983BE005FC021 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B61AC983BE005FC021 /* ChartColors.swift */; };
+		C86C83BA1AC983BE005FC021 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B71AC983BE005FC021 /* ChartSeries.swift */; };
+		C888A04B1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888A04A1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift */; };
+		C888A04D1ACADEB800BAF640 /* DownDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888A04C1ACADEB800BAF640 /* DownDetailViewController.swift */; };
 		C8E2738E1AC4258C00B5127E /* SiteStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2738D1AC4258C00B5127E /* SiteStatusViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +74,8 @@
 		C83A12281ABC5BFA006F2A52 /* AddSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSiteViewController.swift; sourceTree = "<group>"; };
 		C83B8BEE1AB9AE66004AA1BA /* SiteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCollectionViewCell.swift; sourceTree = "<group>"; };
 		C83B8BF01AB9B3AF004AA1BA /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C856D4D91AC98E94006FC9FB /* SiteStatisticsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatisticsPageViewController.swift; sourceTree = "<group>"; };
+		C856D4DB1AC99223006FC9FB /* SiteDetailSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteDetailSettingsViewController.swift; sourceTree = "<group>"; };
 		C86AA1561AB6C91100486F14 /* inspired.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inspired.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86AA15A1AB6C91100486F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C86AA15B1AB6C91100486F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +102,21 @@
 		C86AA1951AB6C9AB00486F14 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C86AA1971AB6C9B000486F14 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		C86AA1991AB6D62500486F14 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C86C839B1AC94A51005FC021 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		C86C839E1AC952B9005FC021 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		C86C83A01AC953AF005FC021 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		C86C83A11AC953AF005FC021 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		C86C83A21AC953AF005FC021 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		C86C83A31AC953AF005FC021 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		C86C83A41AC953AF005FC021 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		C86C83A51AC953AF005FC021 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		C86C83A61AC953AF005FC021 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		C86C83B21AC982F5005FC021 /* SiteStatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatisticsViewController.swift; sourceTree = "<group>"; };
+		C86C83B51AC983BE005FC021 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		C86C83B61AC983BE005FC021 /* ChartColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColors.swift; sourceTree = "<group>"; };
+		C86C83B71AC983BE005FC021 /* ChartSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSeries.swift; sourceTree = "<group>"; };
+		C888A04A1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatisticsContentViewController.swift; sourceTree = "<group>"; };
+		C888A04C1ACADEB800BAF640 /* DownDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownDetailViewController.swift; sourceTree = "<group>"; };
 		C8E2738D1AC4258C00B5127E /* SiteStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +156,9 @@
 		C803A4091AB87E9C0079A5C4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				C86C83B41AC983B0005FC021 /* Chart */,
+				C86C839D1AC951CE005FC021 /* Animate */,
+				C86C839A1AC94A09005FC021 /* fonts */,
 				C80B448D1AB96038008AD0A7 /* SCLAlertView.swift */,
 				C83B8BF01AB9B3AF004AA1BA /* UIColorExtension.swift */,
 			);
@@ -131,8 +168,13 @@
 		C825C4D91AC161EE0065FE1F /* site */ = {
 			isa = PBXGroup;
 			children = (
+				C856D4DB1AC99223006FC9FB /* SiteDetailSettingsViewController.swift */,
 				C825C4DA1AC162070065FE1F /* SiteDetailViewController.swift */,
 				C8E2738D1AC4258C00B5127E /* SiteStatusViewController.swift */,
+				C86C83B21AC982F5005FC021 /* SiteStatisticsViewController.swift */,
+				C856D4D91AC98E94006FC9FB /* SiteStatisticsPageViewController.swift */,
+				C888A04A1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift */,
+				C888A04C1ACADEB800BAF640 /* DownDetailViewController.swift */,
 			);
 			name = site;
 			sourceTree = "<group>";
@@ -223,6 +265,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C86C839A1AC94A09005FC021 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C86C839B1AC94A51005FC021 /* FontAwesome.otf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		C86C839D1AC951CE005FC021 /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+				C86C83A01AC953AF005FC021 /* SpringAnimation.swift */,
+				C86C83A11AC953AF005FC021 /* SpringButton.swift */,
+				C86C83A21AC953AF005FC021 /* SpringImageView.swift */,
+				C86C83A31AC953AF005FC021 /* SpringLabel.swift */,
+				C86C83A41AC953AF005FC021 /* SpringTextField.swift */,
+				C86C83A51AC953AF005FC021 /* SpringTextView.swift */,
+				C86C83A61AC953AF005FC021 /* SpringView.swift */,
+				C86C839E1AC952B9005FC021 /* Spring.swift */,
+			);
+			name = Animate;
+			sourceTree = "<group>";
+		};
+		C86C83B41AC983B0005FC021 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				C86C83B51AC983BE005FC021 /* Chart.swift */,
+				C86C83B61AC983BE005FC021 /* ChartColors.swift */,
+				C86C83B71AC983BE005FC021 /* ChartSeries.swift */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +380,7 @@
 			files = (
 				C86AA1611AB6C91100486F14 /* Main.storyboard in Resources */,
 				C86AA1661AB6C91100486F14 /* LaunchScreen.xib in Resources */,
+				C86C839C1AC94A51005FC021 /* FontAwesome.otf in Resources */,
 				C86AA1631AB6C91100486F14 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,17 +399,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86C83B31AC982F5005FC021 /* SiteStatisticsViewController.swift in Sources */,
+				C86C83A81AC953AF005FC021 /* SpringButton.swift in Sources */,
+				C86C83AD1AC953AF005FC021 /* SpringView.swift in Sources */,
 				C83A12291ABC5BFA006F2A52 /* AddSiteViewController.swift in Sources */,
+				C888A04B1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift in Sources */,
+				C86C83A91AC953AF005FC021 /* SpringImageView.swift in Sources */,
+				C856D4DC1AC99223006FC9FB /* SiteDetailSettingsViewController.swift in Sources */,
 				C803A4061AB818540079A5C4 /* SitesTableViewController.swift in Sources */,
+				C86C83A71AC953AF005FC021 /* SpringAnimation.swift in Sources */,
+				C856D4DA1AC98E94006FC9FB /* SiteStatisticsPageViewController.swift in Sources */,
+				C888A04D1ACADEB800BAF640 /* DownDetailViewController.swift in Sources */,
+				C86C839F1AC952B9005FC021 /* Spring.swift in Sources */,
+				C86C83B81AC983BE005FC021 /* Chart.swift in Sources */,
 				C86AA19A1AB6D62500486F14 /* LoginViewController.swift in Sources */,
 				C86AA15E1AB6C91100486F14 /* ViewController.swift in Sources */,
 				C8E2738E1AC4258C00B5127E /* SiteStatusViewController.swift in Sources */,
 				C825C4DB1AC162070065FE1F /* SiteDetailViewController.swift in Sources */,
 				C83B8BF11AB9B3AF004AA1BA /* UIColorExtension.swift in Sources */,
 				C80B448E1AB96038008AD0A7 /* SCLAlertView.swift in Sources */,
+				C86C83AC1AC953AF005FC021 /* SpringTextView.swift in Sources */,
+				C86C83AB1AC953AF005FC021 /* SpringTextField.swift in Sources */,
 				C86AA15C1AB6C91100486F14 /* AppDelegate.swift in Sources */,
 				C83B8BEF1AB9AE66004AA1BA /* SiteCollectionViewCell.swift in Sources */,
 				C80B44901AB968CA008AD0A7 /* SitesCollectionViewController.swift in Sources */,
+				C86C83B91AC983BE005FC021 /* ChartColors.swift in Sources */,
+				C86C83BA1AC983BE005FC021 /* ChartSeries.swift in Sources */,
+				C86C83AA1AC953AF005FC021 /* SpringLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
