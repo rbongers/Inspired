@@ -30,7 +30,7 @@ class SiteStatisticsViewController: UIViewController, UIGestureRecognizerDelegat
         pageViewController!.dataSource = self
         pageViewController?.delegate = self
         
-        let startingViewController: SiteStatisticsContentViewController = viewControllerAtIndex(0)!
+        let startingViewController: SiteStatisticsDownViewController = viewControllerAtIndex(0)!
         let viewControllers: NSArray = [startingViewController]
         pageViewController!.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: nil)
         pageViewController!.view.frame = CGRectMake(0, 51, view.frame.size.width, view.frame.size.height)
@@ -56,7 +56,7 @@ class SiteStatisticsViewController: UIViewController, UIGestureRecognizerDelegat
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var index = (viewController as SiteStatisticsContentViewController).pageIndex
+        var index = (viewController as SiteStatisticsDownViewController).pageIndex
         NSLog("viewControllerBeforeViewController \(index)")
         pageIndex = index
         updatePageControl();
@@ -71,7 +71,7 @@ class SiteStatisticsViewController: UIViewController, UIGestureRecognizerDelegat
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        var index = (viewController as SiteStatisticsContentViewController).pageIndex
+        var index = (viewController as SiteStatisticsDownViewController).pageIndex
         NSLog("viewControllerAfterViewController \(index)")
         pageIndex = index
         updatePageControl();
@@ -88,20 +88,27 @@ class SiteStatisticsViewController: UIViewController, UIGestureRecognizerDelegat
         return viewControllerAtIndex(index)
     }
     
-    func viewControllerAtIndex(index: Int) -> SiteStatisticsContentViewController? {
+    func viewControllerAtIndex(index: Int) -> SiteStatisticsDownViewController? {
         if self.pageTitles.count == 0 || index >= self.pageTitles.count {
             return nil
         }
         
+        var vc = SiteStatisticsDownViewController()
+        if(index == 0){
+            vc = SiteStatisticsDownViewController()
+        }else{
+            vc = SiteStatisticsDownViewController()
+        }
+        
         // Create a new view controller and pass suitable data.
-        let pageContentViewController = SiteStatisticsContentViewController()
-        pageContentViewController.titleText = pageTitles[index]
+        
+        vc.titleText = pageTitles[index]
         self.navigationItem.title = "test"
-        pageContentViewController.pageIndex = index
-        pageContentViewController.data = self.data
+        vc.pageIndex = index
+        vc.data = self.data
         
        
-        return pageContentViewController
+        return vc
     }
 
     

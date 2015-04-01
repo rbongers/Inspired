@@ -63,6 +63,7 @@ struct Global {
     static var user:PFUser!
     static var sites:NSMutableArray = []
     static var colors:[String: String] = ["Red" : "#CC3333", "Lightblue": "#69CCCC"]
+    static var alerts:[String] = ["Alert 1", "Alert 2", "Alarm", "siren1"]
     static func getSites() -> Bool {
         
         var response = false;

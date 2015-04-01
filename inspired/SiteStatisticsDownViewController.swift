@@ -11,7 +11,7 @@ import Parse
 
 
 
-class SiteStatisticsContentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SiteStatisticsDownViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var pageIndex : Int = 0
     var titleText : String = ""
@@ -46,6 +46,25 @@ class SiteStatisticsContentViewController: UIViewController, UITableViewDataSour
         table.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         table.separatorColor = UIColor.darkGrayColor()
         self.view.addSubview(table)
+        
+        var query = PFQuery(className:"c_\(data.objectId)")
+        query.whereKey("up", equalTo:false)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                println("Successfully retrieved \(objects.count) downs.")
+                // Do something with the found objects
+                if let objects = objects as? [PFObject] {
+                    for object in objects {
+                        println(object.objectId)
+                    }
+                }
+            } else {
+                // Log details of the failure
+                println("Error: \(error) \(error.userInfo!)")
+            }
+        }
     }
     
     func page2(){

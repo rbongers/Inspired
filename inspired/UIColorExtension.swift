@@ -55,6 +55,9 @@ extension UIColor {
     func IgreenColor() -> UIColor {
         return UIColor(rgba: "#3ad36b");
     }
+    func IgreenDarkerColor() -> UIColor {
+        return UIColor(rgba: "#30B25A");
+    }
     
     func IredColor() -> UIColor {
         return UIColor(rgba: "#C32652");
@@ -62,5 +65,25 @@ extension UIColor {
     
     func IdarkColor() -> UIColor {
         return UIColor(rgba: "#222222");
+    }
+}
+
+extension UIButton {
+    private func imageWithColor(color: UIColor) -> UIImage {
+        let rect = CGRectMake(0.0, 0.0, 1.0, 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        
+        CGContextSetFillColorWithColor(context, color.CGColor)
+        CGContextFillRect(context, rect)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    func setBackgroundColor(color: UIColor, forUIControlState state: UIControlState) {
+        self.setBackgroundImage(imageWithColor(color), forState: state)
     }
 }

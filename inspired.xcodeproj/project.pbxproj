@@ -51,8 +51,9 @@
 		C86C83B81AC983BE005FC021 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B51AC983BE005FC021 /* Chart.swift */; };
 		C86C83B91AC983BE005FC021 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B61AC983BE005FC021 /* ChartColors.swift */; };
 		C86C83BA1AC983BE005FC021 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C83B71AC983BE005FC021 /* ChartSeries.swift */; };
-		C888A04B1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888A04A1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift */; };
+		C888A04B1ACA82C600BAF640 /* SiteStatisticsDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888A04A1ACA82C600BAF640 /* SiteStatisticsDownViewController.swift */; };
 		C888A04D1ACADEB800BAF640 /* DownDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888A04C1ACADEB800BAF640 /* DownDetailViewController.swift */; };
+		C888A04F1ACAED7800BAF640 /* PopUpPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888A04E1ACAED7800BAF640 /* PopUpPickerView.swift */; };
 		C8E2738E1AC4258C00B5127E /* SiteStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2738D1AC4258C00B5127E /* SiteStatusViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -115,8 +116,9 @@
 		C86C83B51AC983BE005FC021 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		C86C83B61AC983BE005FC021 /* ChartColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColors.swift; sourceTree = "<group>"; };
 		C86C83B71AC983BE005FC021 /* ChartSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSeries.swift; sourceTree = "<group>"; };
-		C888A04A1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatisticsContentViewController.swift; sourceTree = "<group>"; };
+		C888A04A1ACA82C600BAF640 /* SiteStatisticsDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatisticsDownViewController.swift; sourceTree = "<group>"; };
 		C888A04C1ACADEB800BAF640 /* DownDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownDetailViewController.swift; sourceTree = "<group>"; };
+		C888A04E1ACAED7800BAF640 /* PopUpPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPickerView.swift; sourceTree = "<group>"; };
 		C8E2738D1AC4258C00B5127E /* SiteStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteStatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				C86C839A1AC94A09005FC021 /* fonts */,
 				C80B448D1AB96038008AD0A7 /* SCLAlertView.swift */,
 				C83B8BF01AB9B3AF004AA1BA /* UIColorExtension.swift */,
+				C888A04E1ACAED7800BAF640 /* PopUpPickerView.swift */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -173,7 +176,7 @@
 				C8E2738D1AC4258C00B5127E /* SiteStatusViewController.swift */,
 				C86C83B21AC982F5005FC021 /* SiteStatisticsViewController.swift */,
 				C856D4D91AC98E94006FC9FB /* SiteStatisticsPageViewController.swift */,
-				C888A04A1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift */,
+				C888A04A1ACA82C600BAF640 /* SiteStatisticsDownViewController.swift */,
 				C888A04C1ACADEB800BAF640 /* DownDetailViewController.swift */,
 			);
 			name = site;
@@ -403,7 +406,7 @@
 				C86C83A81AC953AF005FC021 /* SpringButton.swift in Sources */,
 				C86C83AD1AC953AF005FC021 /* SpringView.swift in Sources */,
 				C83A12291ABC5BFA006F2A52 /* AddSiteViewController.swift in Sources */,
-				C888A04B1ACA82C600BAF640 /* SiteStatisticsContentViewController.swift in Sources */,
+				C888A04B1ACA82C600BAF640 /* SiteStatisticsDownViewController.swift in Sources */,
 				C86C83A91AC953AF005FC021 /* SpringImageView.swift in Sources */,
 				C856D4DC1AC99223006FC9FB /* SiteDetailSettingsViewController.swift in Sources */,
 				C803A4061AB818540079A5C4 /* SitesTableViewController.swift in Sources */,
@@ -420,6 +423,7 @@
 				C80B448E1AB96038008AD0A7 /* SCLAlertView.swift in Sources */,
 				C86C83AC1AC953AF005FC021 /* SpringTextView.swift in Sources */,
 				C86C83AB1AC953AF005FC021 /* SpringTextField.swift in Sources */,
+				C888A04F1ACAED7800BAF640 /* PopUpPickerView.swift in Sources */,
 				C86AA15C1AB6C91100486F14 /* AppDelegate.swift in Sources */,
 				C83B8BEF1AB9AE66004AA1BA /* SiteCollectionViewCell.swift in Sources */,
 				C80B44901AB968CA008AD0A7 /* SitesCollectionViewController.swift in Sources */,

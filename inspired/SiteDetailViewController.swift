@@ -38,7 +38,8 @@ class SiteDetailViewController: UIViewController, UITabBarDelegate {
             if(active){
                 setServiceOn(true);
             }else{
-                setServiceOn(false);            }
+                setServiceOn(false);
+            }
         }
         else{
             NSLog("active");
@@ -65,13 +66,13 @@ class SiteDetailViewController: UIViewController, UITabBarDelegate {
         if(active){
             serviceSwitch.setOn(true, animated: true);
             serviceStatusO.textColor = UIColor(rgba: "#3ad36b");
-            serviceStatus.text = "Service is on";
+            serviceStatus.text = "Service is running";
             heartBeat.repeatCount = 1;
 
         }else{
             serviceSwitch.setOn(false, animated: false);
             serviceStatusO.textColor = UIColor(rgba: "#C32652");
-            serviceStatus.text = "Service is off";
+            serviceStatus.text = "Service is paused";
         }
     }
     

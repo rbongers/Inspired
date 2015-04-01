@@ -467,7 +467,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.13310842803030298" green="0.13310842803030298" blue="0.13310842803030298" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="0Ne-1W-6a4" firstAttribute="top" secondItem="rEH-78-iUp" secondAttribute="bottom" id="1rw-qd-cvi"/>
                             <constraint firstItem="UD2-HI-H0y" firstAttribute="centerY" secondItem="4b8-FE-4PC" secondAttribute="centerY" id="77g-qV-3go"/>
@@ -735,6 +735,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection headerTitle="General" id="snS-JZ-xOc">
@@ -758,6 +759,9 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Tvz-K6-mdT" id="MvI-x0-hrg"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -787,6 +791,9 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Tvz-K6-mdT" id="teP-eP-kQ7"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -799,7 +806,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Notification" footerTitle="save" id="FCU-LI-ciY">
+                            <tableViewSection headerTitle="Notification" id="FCU-LI-ciY">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="aXV-tC-hD4">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -848,6 +855,9 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="clickNotificationAlertButton:" destination="Tvz-K6-mdT" eventType="touchUpInside" id="6Rm-F2-qqP"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -864,11 +874,24 @@
                         <connections>
                             <outlet property="dataSource" destination="Tvz-K6-mdT" id="MCc-w6-LWe"/>
                             <outlet property="delegate" destination="Tvz-K6-mdT" id="Ugo-ZM-hh3"/>
+                            <outletCollection property="gestureRecognizers" destination="uI1-o2-Imx" appends="YES" id="4hd-WD-T95"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Settings" image="basic_cong" id="TUu-gN-IVj"/>
+                    <connections>
+                        <outlet property="buttonNoty" destination="cT8-cp-m1s" id="sqA-9T-SgE"/>
+                        <outlet property="fieldName" destination="5M4-Or-eNR" id="bJu-do-94J"/>
+                        <outlet property="fieldUrl" destination="QTC-le-FUH" id="5Ab-uB-amF"/>
+                        <outlet property="switchNoty" destination="aN8-LP-iLm" id="RbI-WN-E5r"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbd-0A-cnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uI1-o2-Imx">
+                    <connections>
+                        <action selector="tabbedBackground:" destination="Tvz-K6-mdT" id="dvJ-9t-eX3"/>
+                        <outlet property="delegate" destination="Tvz-K6-mdT" id="xHb-4H-E0M"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2183" y="-1277"/>
         </scene>

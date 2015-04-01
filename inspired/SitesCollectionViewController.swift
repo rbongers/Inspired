@@ -106,6 +106,8 @@ class SitesCollectionViewController: UICollectionViewController, UICollectionVie
             Controller.data = Global.sites[selectedIndex] as PFObject
             var Controller2 = tab.viewControllers?[1] as SiteStatisticsViewController;
             Controller2.data = Global.sites[selectedIndex] as PFObject
+            var Controller3 = tab.viewControllers?[2] as SiteDetailSettingsViewController;
+            Controller3.data = Global.sites[selectedIndex] as PFObject
         }
     }
     
