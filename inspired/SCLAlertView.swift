@@ -112,14 +112,14 @@ public class SCLAlertView: UIViewController {
         baseView.frame = view.frame
         baseView.addSubview(contentView)
         // Content View
-        contentView.backgroundColor = UIColor(white:1, alpha:1)
+        contentView.backgroundColor = UIColor().IdarkColor()
         contentView.layer.cornerRadius = 5
         contentView.layer.masksToBounds = true
         contentView.layer.borderWidth = 0.5
         contentView.addSubview(labelTitle)
         contentView.addSubview(viewText)
         // Circle View
-        circleBG.backgroundColor = UIColor.whiteColor()
+        circleBG.backgroundColor = UIColor().IdarkColor()
         circleBG.layer.cornerRadius = circleBG.frame.size.height / 2
         baseView.addSubview(circleBG)
         circleBG.addSubview(circleView)
@@ -132,19 +132,22 @@ public class SCLAlertView: UIViewController {
         // Title
         labelTitle.numberOfLines = 1
         labelTitle.textAlignment = .Center
-        labelTitle.font = UIFont(name: kDefaultFont, size:20)
+        labelTitle.font = UIFont(name: "Helvetica-light", size:20)
         labelTitle.frame = CGRect(x:12, y:kTitleTop, width: kWindowWidth - 24, height:kTitleHeight)
+        labelTitle.textColor = UIColor.whiteColor()
         // View text
         viewText.editable = false
         viewText.textAlignment = .Center
         viewText.textContainerInset = UIEdgeInsetsZero
         viewText.textContainer.lineFragmentPadding = 0;
-        viewText.font = UIFont(name: kDefaultFont, size:14)
+        viewText.font = UIFont(name: "Helvetica-light", size:14)
+        viewText.backgroundColor = UIColor.clearColor()
+        viewText.textColor = UIColor.whiteColor()
         // Colours
-        contentView.backgroundColor = UIColorFromRGB(0xFFFFFF)
-        labelTitle.textColor = UIColorFromRGB(0x4D4D4D)
-        viewText.textColor = UIColorFromRGB(0x4D4D4D)
-        contentView.layer.borderColor = UIColorFromRGB(0xCCCCCC).CGColor
+        contentView.backgroundColor = UIColor().IdarkColor()
+//        labelTitle.textColor = UIColorFromRGB(0x4D4D4D)
+//        viewText.textColor = UIColorFromRGB(0x4D4D4D)
+        contentView.layer.borderColor = UIColor.blackColor().CGColor
     }
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {

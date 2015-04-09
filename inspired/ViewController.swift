@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     func openApplication(){
-        self.performSegueWithIdentifier("tosites", sender: nil);
+        self.performSegueWithIdentifier("tosites_old", sender: nil);
     }
     
     override func didReceiveMemoryWarning() {

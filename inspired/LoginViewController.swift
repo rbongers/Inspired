@@ -39,9 +39,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 // Do stuff after successful login.
                 NSLog("login success");
                 self.dismissViewControllerAnimated(true, completion: {});
-            } else {
+            } else if error != nil{
+//                println(error.userInfo);
+//                let errorstring:NSString = error.userInfo as String!
+                SCLAlertView().showError("Failed", subTitle: "Wrong Credentials", closeButtonTitle: "Close", duration: 99)
                 // The login failed. Check error to see why.
-                NSLog("login failed");
+//                NSLog("login failed");
             }
         }
     }

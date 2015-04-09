@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0BE9871ACC55D4005CFC6D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0BE9841ACC55D4005CFC6D /* Bolts.framework */; };
+		0C0BE9881ACC55D4005CFC6D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0BE9851ACC55D4005CFC6D /* Parse.framework */; };
+		0C0BE9891ACC55D4005CFC6D /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0BE9861ACC55D4005CFC6D /* ParseCrashReporting.framework */; };
 		C803A4061AB818540079A5C4 /* SitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A4051AB818540079A5C4 /* SitesTableViewController.swift */; };
 		C80B448E1AB96038008AD0A7 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B448D1AB96038008AD0A7 /* SCLAlertView.swift */; };
 		C80B44901AB968CA008AD0A7 /* SitesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B448F1AB968CA008AD0A7 /* SitesCollectionViewController.swift */; };
@@ -22,9 +25,6 @@
 		C86AA1631AB6C91100486F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86AA1621AB6C91100486F14 /* Images.xcassets */; };
 		C86AA1661AB6C91100486F14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86AA1641AB6C91100486F14 /* LaunchScreen.xib */; };
 		C86AA1721AB6C91100486F14 /* inspiredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AA1711AB6C91100486F14 /* inspiredTests.swift */; };
-		C86AA17E1AB6C96000486F14 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA17B1AB6C96000486F14 /* Bolts.framework */; };
-		C86AA17F1AB6C96000486F14 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA17C1AB6C96000486F14 /* Parse.framework */; };
-		C86AA1801AB6C96000486F14 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA17D1AB6C96000486F14 /* ParseCrashReporting.framework */; };
 		C86AA1821AB6C97C00486F14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA1811AB6C97C00486F14 /* AudioToolbox.framework */; };
 		C86AA1841AB6C98100486F14 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA1831AB6C98100486F14 /* CFNetwork.framework */; };
 		C86AA1861AB6C98600486F14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86AA1851AB6C98600486F14 /* CoreGraphics.framework */; };
@@ -68,6 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0BE9841ACC55D4005CFC6D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0C0BE9851ACC55D4005CFC6D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0C0BE9861ACC55D4005CFC6D /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		C803A4051AB818540079A5C4 /* SitesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesTableViewController.swift; sourceTree = "<group>"; };
 		C80B448D1AB96038008AD0A7 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		C80B448F1AB968CA008AD0A7 /* SitesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesCollectionViewController.swift; sourceTree = "<group>"; };
@@ -87,9 +90,6 @@
 		C86AA16B1AB6C91100486F14 /* inspiredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = inspiredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86AA1701AB6C91100486F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C86AA1711AB6C91100486F14 /* inspiredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inspiredTests.swift; sourceTree = "<group>"; };
-		C86AA17B1AB6C96000486F14 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Documents/parse-library-1.6.4/Bolts.framework"; sourceTree = "<group>"; };
-		C86AA17C1AB6C96000486F14 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Documents/parse-library-1.6.4/Parse.framework"; sourceTree = "<group>"; };
-		C86AA17D1AB6C96000486F14 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../Documents/parse-library-1.6.4/ParseCrashReporting.framework"; sourceTree = "<group>"; };
 		C86AA1811AB6C97C00486F14 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C86AA1831AB6C98100486F14 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C86AA1851AB6C98600486F14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,20 +128,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C86AA1981AB6C9B000486F14 /* Accounts.framework in Frameworks */,
+				0C0BE9891ACC55D4005CFC6D /* ParseCrashReporting.framework in Frameworks */,
 				C86AA1961AB6C9AB00486F14 /* Social.framework in Frameworks */,
 				C86AA1941AB6C9A700486F14 /* libsqlite3.dylib in Frameworks */,
 				C86AA1921AB6C9A300486F14 /* libz.dylib in Frameworks */,
 				C86AA1901AB6C99E00486F14 /* SystemConfiguration.framework in Frameworks */,
 				C86AA18E1AB6C99900486F14 /* Security.framework in Frameworks */,
+				0C0BE9881ACC55D4005CFC6D /* Parse.framework in Frameworks */,
 				C86AA18C1AB6C99500486F14 /* QuartzCore.framework in Frameworks */,
 				C86AA18A1AB6C99000486F14 /* MobileCoreServices.framework in Frameworks */,
 				C86AA1881AB6C98B00486F14 /* CoreLocation.framework in Frameworks */,
 				C86AA1861AB6C98600486F14 /* CoreGraphics.framework in Frameworks */,
 				C86AA1841AB6C98100486F14 /* CFNetwork.framework in Frameworks */,
 				C86AA1821AB6C97C00486F14 /* AudioToolbox.framework in Frameworks */,
-				C86AA17E1AB6C96000486F14 /* Bolts.framework in Frameworks */,
-				C86AA17F1AB6C96000486F14 /* Parse.framework in Frameworks */,
-				C86AA1801AB6C96000486F14 /* ParseCrashReporting.framework in Frameworks */,
+				0C0BE9871ACC55D4005CFC6D /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +208,9 @@
 				C86AA1851AB6C98600486F14 /* CoreGraphics.framework */,
 				C86AA1831AB6C98100486F14 /* CFNetwork.framework */,
 				C86AA1811AB6C97C00486F14 /* AudioToolbox.framework */,
-				C86AA17B1AB6C96000486F14 /* Bolts.framework */,
-				C86AA17C1AB6C96000486F14 /* Parse.framework */,
-				C86AA17D1AB6C96000486F14 /* ParseCrashReporting.framework */,
+				0C0BE9841ACC55D4005CFC6D /* Bolts.framework */,
+				0C0BE9851ACC55D4005CFC6D /* Parse.framework */,
+				0C0BE9861ACC55D4005CFC6D /* ParseCrashReporting.framework */,
 				C86AA1581AB6C91100486F14 /* inspired */,
 				C86AA16E1AB6C91100486F14 /* inspiredTests */,
 				C86AA1571AB6C91100486F14 /* Products */,
@@ -556,6 +556,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Wux/Documents/parse-library-1.6.4",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = inspired/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -573,6 +574,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Wux/Documents/parse-library-1.6.4",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = inspired/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
